@@ -4,6 +4,6 @@ from django.contrib.auth.views import login
 
 urlpatterns =[ 
 	url(r'^$', views.index , name= "index"),
-	url(r'^$', views.menu , name= "menu"),
+	url(r'^menu/$', views.menu , name= "menu"),
 
 ]
