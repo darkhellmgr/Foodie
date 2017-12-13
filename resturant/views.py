@@ -5,7 +5,8 @@ from resturant.models import Menu
 
 def index(request):
 	query = Carousel.objects.all()
-	context_dict = {'slider': query}
+	menu = Menu.objects.all()
+	context_dict = {'slider': query,'menu':menu}
 	return render(request,'base.html', context_dict)
 
 def menu(request):
@@ -14,3 +15,6 @@ def menu(request):
 	return render(request, 'sources/menu.html', context_dict)
 	
 
+def check(request):
+	context_dict = {'name' : 'suman'}
+	return render(request,'check.html',context_dict)

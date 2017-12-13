@@ -1,5 +1,5 @@
 {% extends "sources/navbar.html" %}
-{%block menu%}
+{% block menu %}
      <section id="price">
         <div class="container">
             <div class="row">
@@ -13,7 +13,7 @@
                             </div>
                             <ul>
                                 
-                                {%for i in menu%}
+                                <!-- {%for i in menu%} -->
                                 <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                                     <div class="item">
                                         <div class="item-title">
@@ -24,7 +24,7 @@
                                         <p>{{i.title_content}}</p>
                                     </div>
                                 </li>
-                                {%endfor%}
+                                <!-- {%endfor%} -->
                                                                
                             </ul>
                         </div>
@@ -33,4 +33,5 @@
             </div><!-- .row close -->
         </div><!-- .containe close -->
     </section><!-- #price close -->
-{% endblock %}
+    {% endblock %}
+

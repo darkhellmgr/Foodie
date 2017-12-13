@@ -46,7 +46,7 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
 			    <ul class="navbar-nav mr-auto">
 			      <li class="nav-item">
-			        <a class="nav-link" href="">HOME</a>
+			        <a class="nav-link" href="/home/">HOME</a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="#about-us">ABOUT-US</a>
@@ -134,10 +134,10 @@
 	    {% endblock %}
 
 	    <!--==============Menu start========-->
-        
-        {% include "sources/menu.html" %}
-        
-
+        {% include 'sources/menu.html' %}
+        <!-- <a class="btn btn-default pull-right wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="/menu/" role="button">More Info</a> -->
+             
+        <p>{{menu.price}}</p>
 			    
   <!-- =============CONTACT US  start================ -->
     <section id="contact-us">
